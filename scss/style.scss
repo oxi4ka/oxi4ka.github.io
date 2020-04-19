@@ -62,11 +62,7 @@ header {
         width: 200px;
     }
 }
-.logo {
-    a {
-        cursor: pointer;
-    }
-}
+
 
 // Стили для меню
 
@@ -466,8 +462,7 @@ header {
     }
 
     button {
-        background-color: $bgcolor;
-        color: $color;
+        color: $bgcolor;
         font-family: $mainFontFamily;
         text-transform: uppercase;
         border: none;
@@ -477,8 +472,7 @@ header {
         margin: 10px 20px;
         padding: 15px 35px;
         position: relative;
-        border: 1px solid $color;
-        color: $color;
+        border: 1px solid $bgcolor;
         font-family: $mainFontFamily;
         transition: .4s;
         text-transform: uppercase;
@@ -498,7 +492,7 @@ header {
         }
 
         &:hover::after {
-            border-color: $color;
+            border-color: $bgcolor;
             width: calc(100% - 10px);
             height: calc(100% + 10px);
         }
@@ -609,7 +603,6 @@ header {
     border: 20px solid transparent;
     border-image: 20 repeating-linear-gradient(135deg, #fff, #000 10px, transparent 10px, transparent 20px, #363636 20px, #626061 30px, transparent 30px, transparent 40px);
     font-family: $mainFontFamily;
-    color: $color;
     font-size: 20px;
     font-weight: bold;
 }
